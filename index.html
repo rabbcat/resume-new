@@ -1,0 +1,323 @@
+<!--html5标准文档模式-->
+<!DOCTYPE html>
+<!--试用的语言是中文简体-->
+<html lang="zh-CN">
+<head>
+    <!--编码格式-->
+    <meta charset="utf-8">
+    <!--是告诉浏览器用最新的渲染引擎来渲染页面-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--用标准的移动端viewport设置来渲染页面  设置宽度和设备一样宽 默认的缩放比是和pc一样 1.0 不允许用户缩放-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <!-- 首先告诉浏览器   优先解析-->
+    <title>Resume</title>
+    <!--需要引用bootstrap的核心css文件-->
+    <!-- Bootstrap -->
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--小于IE9的浏览器会加载这么两句js-->
+
+    <!--条件注释  小于IE9才会运行标签里面的代码   gt  gte  lte  条件判断    -->
+    <!--[if lt IE 9]>
+    <script src="lib/html5shiv/html5shiv.js"></script>
+    <script src="lib/respond/respond.js"></script>
+    <![endif]-->
+    <!--TODO自己的css文件-->
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/css.css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="font/font_plqf1l2wfpggy14i/iconfont.css"/>
+    <link rel="stylesheet" href="font/font_4hoo4k6qzwso47vi/iconfont.css"/>
+    <link rel="stylesheet" href="css/animate.min.css"/>
+</head>
+<body>
+<!--TODO-->
+<!--[if lt IE 9]>
+<h1>你好，世界！</h1>
+<![endif]-->
+<nav class="navbar navbar-default affix-top" data-offset-top='662' data-spy="affix" role="navigation">
+    <!--<div class="container-fluid">-->
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right" id="nav_ul">
+                <li class="active"><a href="#" class="home">主页 <span class="sr-only">(current)</span></a></li>
+                <li><a href="#" class='me'>关于我</a></li>
+                <li><a href="#" class="skill">我的技能</a></li>
+                <li><a href="#" class="project">项目展示</a></li>
+                <li><a href="#" class="contact">联系我</a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<div class="section s1 clearfix" id="sec1">
+    <div class="overlay">
+        <div class="intro container">
+            <div class="row fadeInUp">
+                <h3>HELLO, WORLD.</h3>
+
+                <h1>'This is rabbcat.'<br/>I am a front-end developer <br/> HIRE ME!</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section s2 clearfix" id="sec2">
+    <div class="container">
+        <div data-scroll-reveal class="nav_title col-md-2 col-md-offset-2">
+            Education & Working
+        </div>
+        <div data-scroll-reveal class="col-md-1 dot">
+            <div class="line hidden-sm hidden-xs"></div>
+            <ul class="nav  nav_tabs " role="tablist">
+                <!--
+                a href 指明当前控制的是哪个内容容器 ID class
+                data-toggle="tab" 必须声明
+                -->
+                <li role="presentation" class="active">
+                    <a href="#home" aria-controls="home" role="tab" data-toggle="tab">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-education"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-education1"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-education2"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-education3"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!--标签页  的内容区块-->
+        <!-- Tab panes -->
+        <div data-scroll-reveal class="tab-content col-md-7">
+            <div role="tabpanel" class="tab-pane active" id="home">
+                <h3>2012-2016</h3>
+                <h4>本科毕业于西安工业大学</h4>
+                <ul>
+                    <li>学院：电子信息工程学院</li>
+                    <li>专业：通信工程</li>
+                    <li>主要课程：大学英语，大学计算机基础，计算机二级C语言，微机原理，数字信号处理，大学物理，单片机原理</li>
+                </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="profile">
+                <h3>2015.8-2015.12</h3>
+                <h4>西安维畅网络---前端工程师助理 </h4>
+            </div>
+             <div role="tabpanel" class="tab-pane" id="settings">
+                <h3>2016.1-至今 </h3>
+                <h4>陕西锐琦互联有限公司---前端工程师</h4>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="messages">
+                2
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="section s3 clearfix" id="sec3">
+    <div class="container">
+        <div class="row">
+            <h3>SKILLSET <br/>
+                I've Got Some Skills.</h3>
+
+            <div class="progress" data-scroll-reveal="enter left,move 100px">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                     style="width: 90%;">
+                    90%
+                </div>
+                <strong>JS</strong>
+            </div>
+            <div class="progress" data-scroll-reveal="enter left,move 150px">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                     style="width: 80%;">
+                    80%
+                </div>
+                <strong>css3</strong>
+            </div>
+            <div class="progress"data-scroll-reveal="enter left,move 200px" >
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                     style="width: 70%;">
+                    70%
+                </div>
+                <strong>JQuery</strong>
+            </div>
+            <div class="progress" data-scroll-reveal="enter left,move 250px" >
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                     style="width: 75%;">
+                    75%
+                </div>
+                <strong>Ajax</strong>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="section s4 clearfix" id="sec4">
+    <div class="container">
+        <div class="row">
+            <h3>项目经验</h3>
+            <div class="port-item-wrapper" id="port-item-wrapper">
+                 <div class="col-lg-4 col-md-4 col-sm-6 portfolio-item text-center cat-logo" style="display: inline-block;">
+                    <figure>
+                        <img src="images/portfolio/portfolio3.jpg" class="img img-responsive" alt="portfolio Image">
+                        <figcaption>
+                            <h3 class="heading text-center txt-sm txt-n animated fadeInDownBig a-d-0-4">付融宝官网</h3>
+                            <div class="ul ul-center"><span></span></div>
+                            <div class="buttons">
+                                <!--<a href="#" class="animated fadeInLeftBig a-d-0-3 btn btn-circle btn-primary btn-lg social-btn border-btn social"><span class="fa fa-facebook"></span></a>-->
+                                <a href="https://www.frbao.com/" class="animated fadeInRightBig a-d-0-3 btn btn-circle btn-default btn-lg social-btn border-btn view"><span class="iconfont icon-lianjie"></span></a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 portfolio-item text-center cat-web" style="display: inline-block;">
+                    <figure>
+                        <img src="images/portfolio/portfolio8.jpg" class="img img-responsive" alt="portfolio Image">
+                        <figcaption>
+                            <h3 class="heading text-center txt-sm txt-n animated fadeInDownBig a-d-0-4">恒生云融官网</h3>
+                            <div class="ul ul-center"><span></span></div>
+                            <div class="buttons">
+                                <!--<a href="#" class="animated fadeInLeftBig a-d-0-3 btn btn-circle btn-primary btn-lg social-btn border-btn social"><span class="fa fa-facebook"></span></a>-->
+                                <a href="http://www.hsjry.com/" class="animated fadeInRightBig a-d-0-3 btn btn-circle btn-default btn-lg social-btn border-btn view"><span class="iconfont icon-lianjie"></span></a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 portfolio-item text-center cat-dev" style="display: inline-block;">
+                    <figure>
+                        <img src="images/portfolio/portfolio5.jpg" class="img img-responsive" alt="portfolio Image">
+                        <figcaption>
+                            <h3 class="heading text-center txt-sm txt-n animated fadeInDownBig a-d-0-4">flappybird游戏模拟</h3>
+                            <div class="ul ul-center"><span></span></div>
+                            <div class="buttons">
+                                <!--<a href="#" class="animated fadeInLeftBig a-d-0-3 btn btn-circle btn-primary btn-lg social-btn border-btn social"><span class="fa fa-facebook"></span></a>-->
+                                <a href="https://rabbcat.github.io/flappybird/" class="animated fadeInRightBig a-d-0-3 btn btn-circle btn-default btn-lg social-btn border-btn view"><span class="iconfont icon-lianjie"></span></a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 portfolio-item text-center cat-dev" style="display: inline-block;">
+                    <figure>
+                        <img src="images/portfolio/portfolio6.jpg" class="img img-responsive" alt="portfolio Image">
+                        <figcaption>
+                            <h3 class="heading text-center txt-sm txt-n animated fadeInDownBig a-d-0-4">Portfolio Title</h3>
+                            <div class="ul ul-center"><span></span></div>
+                            <div class="buttons">
+                                <!--<a href="#" class="animated fadeInLeftBig a-d-0-3 btn btn-circle btn-primary btn-lg social-btn border-btn social"><span class="fa fa-facebook"></span></a>-->
+                                <a href="#" class="animated fadeInRightBig a-d-0-3 btn btn-circle btn-default btn-lg social-btn border-btn view"><span class="iconfont icon-lianjie"></span></a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 portfolio-item text-center cat-logo" style="display: inline-block;">
+                    <figure>
+                        <img src="images/portfolio/portfolio1.jpg" class="img img-responsive" alt="portfolio Image">
+                        <figcaption>
+                            <h3 class="heading text-center txt-sm txt-n animated fadeInDownBig a-d-0-4">微金所移动web项目</h3>
+                            <div class="ul ul-center"><span></span></div>
+                            <div class="buttons">
+                                <!--<a href="#" class="animated fadeInLeftBig a-d-0-3 btn btn-circle btn-primary btn-lg social-btn border-btn social"><span class="fa fa-facebook"></span></a>-->
+                                <a href="wjs/wjs2.html" class="animated fadeInRightBig a-d-0-3 btn btn-circle btn-default btn-lg social-btn border-btn view"><span class="iconfont icon-lianjie"></span></a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 portfolio-item text-center cat-web" style="display: inline-block;">
+                    <figure>
+                        <img src="images/portfolio/portfolio2.png" class="img img-responsive" alt="portfolio Image">
+                        <figcaption>
+                            <h3 class="heading text-center txt-sm txt-n animated fadeInDownBig a-d-0-4">吉普牧马人项目</h3>
+                            <div class="ul ul-center"><span></span></div>
+                            <div class="buttons">
+                                <!--<a href="#" class="animated fadeInLeftBig a-d-0-3 btn btn-circle btn-primary btn-lg social-btn border-btn social"><span class="fa fa-facebook"></span></a>-->
+                                <a href="jeep复刻/jeep.html" class="animated fadeInRightBig a-d-0-3 btn btn-circle btn-default btn-lg social-btn border-btn view"><span class="iconfont icon-lianjie"></span></a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="section s5 clearfix" id="sec5">
+    <video autoplay loop>
+        <source src="videos/ocean.mp4" type="video/mp4"/>
+        <source src="videos/ocean.webm" type="video/webm"/>
+        <source src="videos/ocean.ogv" type="video/ogv"/>
+        <source src="videos/ocean.ogv" type="video/ogv"/>
+    </video>
+    <div class="container">
+        <div class="row" id="conrow">
+            <h3>联系我</h3>
+            <div class="phone">mobile:15591845601</div>
+            <div class="email">email:742062761@qq.com</div>
+            <form action="get">
+                <div>姓名<input class="txt f_right" type="text" /></div>
+                <div>email<input class="txt f_right" type="text" /></div>
+                <div class='det'>留言<input class="txt f_right" type="text" /></div>
+                <input type="submit" value="提交" class="sub"/>
+            </form>
+            <a href="javascript:0"><i class="iconfont icon-weixin"></i></a>
+            <a href="javascript:0"><i class="iconfont icon-facebook"></i></a>
+            <a href="javascript:0"><i class="iconfont icon-instagram"></i></a>
+        </div>
+    </div>
+</div>
+<a class="to-top">Top</a>
+<!--因为是基于jquery的-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="lib/jquery/jquery.js"></script>
+<!--引入bootstrap核心js文件-->
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<!--TODO 自己的js文件-->
+<script src='js/scrollReveal.js'></script>
+<script src='js/jquery.toTop.js'></script>
+<script src="js/jquery.toTop.min.js"></script>
+<script src="js/jquery.scrollTo.js"></script>
+<script src='font/iconfont.js'></script>
+<script src='js/index.js'></script>
+<script src="http://html5media.googlecode.com/svn/trunk/src/html5media.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+body{
+    font-family:Microsoft YaHei,sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+a{
+    color: #333;
+}
+a:hover{
+    color: #333;
+    text-decoration: none;
+}
+ul,li,i,b{
+    list-style: none;
+    text-decoration: none;
+}
+@font-face {
+    font-family: 'wjs_font';
+    src: url('../fonts/MiFie-Web-Font.eot') format('embedded-opentype'),
+    url('../fonts/MiFie-Web-Font.svg') format('svg'),
+    url('../fonts/MiFie-Web-Font.ttf') format('truetype'),
+    url('../fonts/MiFie-Web-Font.woff') format('woff');
+}
+.wjs_icon{
+    font-family:'wjs_font';
+}
+.wjs_icon_phone::before{
+    content: '\e908';
+}
+.glyphicon-menu-down:before {
+    content: "\e259";
+
+}
+.wjs_icon_tel::before{
+    content: '\e909';
+}
+.wjs-icon-left::before{
+    content: '\e920';
+    color: #e92322;
+    font-size: 50px;
+}
+.wjs-icon-right::before{
+    content: '\e93e';
+    color: #3c3c3c;
+    font-size:35px;
+}
+.wjs_icon_01::before{
+    content: '\e903';
+    font-size: 30px;
+}
+.wjs_icon_clock::before{
+    content:"\e906";
+    font-size: 25px;
+}
+.wjs_icon_movie::before{
+    content: "\e905";
+    font-size: 25px;
+}
+.icon_news1::before{
+    content: "\e90e";
+    font-size: 30px;
+    color: #fff;
+}
+.icon_news2::before{
+    content: "\e90f";
+    font-size: 30px;
+    color: #fff;
+}
+.icon_news3::before{
+    content: "\e910";
+    font-size: 30px;
+    color: #fff;
+}
+.icon_news4::before{
+    content: "\e911";
+    font-size: 30px;
+    color: #fff;
+}
+.company_icon1::before{
+    content: '\e946';
+    font-size: 60px;
+}
+.company_icon2::before{
+    content: '\e92f';
+    font-size: 60px;
+}
+.company_icon3::before{
+    content: '\e92e';
+    font-size: 60px;
+}
+.company_icon4::before{
+    content: '\e92a';
+    font-size: 60px;
+}
+.company_icon5::before{
+    content: '\e929';
+    font-size: 60px;
+}
+.company_icon6::before{
+    content: '\e931';
+    font-size: 60px;
+}
+.company_icon7::before{
+    content: '\e92c';
+    font-size: 60px;
+}
+.company_icon8::before{
+    content: '\e92b';
+    font-size: 60px;
+}
+

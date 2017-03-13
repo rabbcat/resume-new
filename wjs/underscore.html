@@ -1,0 +1,53 @@
+<!--html5标准文档模式-->
+<!DOCTYPE html>
+<!--试用的语言是中文简体-->
+<html lang="zh-CN">
+<head>
+    <!--编码格式-->
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+        th,td{
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <thead>
+        <th>名字</th>
+        <th>年龄</th>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+<script src="lib/underscore/underscore.js">
+//    <%_.each(model, function (model) {%>
+//        <tr><td><%-model.name %></td><td><%-model.age %></td></tr>
+//        <%})%>
+</script>
+<script type="text/template" id="template">
+    <%_.each(person, function (person) {%>
+    <tr><td><%=person.name %></td><td><%=person.age %></td></tr>
+    <%})%>
+</script>
+<script>
+
+    var person = [
+        {name:'小龙龙',age:18},
+        {name:'小刚刚',age:19},
+        {name:'小刚刚',age:19}
+    ];
+    var templateStr=document.querySelector('#template').innerHTML;
+    console.log(templateStr);
+    var templateFuc= _.template(templateStr);
+    console.log(templateFuc);
+//    var templateHtml=templateFuc({model:person});
+    var templateHtml=templateFuc(person);
+    //    var templateHtml=templateFuc({name:'小刚刚',age:19});
+    console.log(templateHtml);
+    document.querySelector('tbody').innerHTML=templateHtml;
+</script>
+</body>
+</html>
